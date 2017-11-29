@@ -12,9 +12,9 @@
     <description>Demo project for Spring Boot</description>
 
     <parent>
-        <groupId>org.springframework.shell</groupId>
-        <artifactId>spring-shell-parent</artifactId>
-        <version>2.0.0.BUILD-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
     </parent>
 
     <properties>
@@ -24,25 +24,17 @@
     </properties>
 
     <dependencies>
-        <!-- The following starter brings everything you need, including adapters that trigger only if needed-->
+
         <dependency>
-            <groupId>org.springframework.shell</groupId>
-            <artifactId>spring-shell-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
-        <!-- Depend on Shell 1 to use Shell 1 API -->
-        <dependency>
-            <groupId>org.springframework.shell</groupId>
-            <artifactId>spring-shell</artifactId>
-            <!--<version>1.2.0.RELEASE</version>-->
-        </dependency>
-
-        <!-- Depend on JCommander to use JCommander API -->
-        <dependency>
-            <groupId>com.beust</groupId>
-            <artifactId>jcommander</artifactId>
-            <version>1.48</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>

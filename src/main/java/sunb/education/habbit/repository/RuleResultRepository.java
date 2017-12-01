@@ -12,4 +12,6 @@ import java.util.List;
 public interface RuleResultRepository extends JpaRepository<RuleResult, Long> {
 
     public List<RuleResult> findRuleResultByCheckDate(String date);
+
+    public void deleteRuleResultByCheckDate(String date);
 }
